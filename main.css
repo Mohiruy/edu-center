@@ -1,1 +1,27 @@
 /*admin*/
+.logo{
+    width: 303px;
+    height: 260px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.admin {
+    width: 278px;
+    height: 78px;
+    background: #3E54AC;
+    border-radius: 40px;
+    margin: 0;
+}
+
+.admin img{
+    display: inline-block;
+    padding: 14px;
+}
+
+.admin-name {
+    display: inline-block;
+}
