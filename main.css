@@ -1,27 +1,358 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url(./fonts/Jost-Regular.ttf);
+}
+
+
 /*admin*/
-.logo{
-    width: 303px;
-    height: 260px;
+body {
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.section1 {
+    background: #FFFFFF;
+    box-shadow: 4px 0px 5px rgba(184, 184, 184, 0.25);
+    margin-right: 0.5rem;
+    height: 100vh;
+}
+
+.admin{
+    height: 100vh;
+    background: #ECF2FF;
+}
+
+.nav {
+    display: flex;
+    text-align: center;
 }
 
 .logo img{
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
 }
 
-.admin {
-    width: 278px;
-    height: 78px;
+.navbar {
     background: #3E54AC;
+    width: 278px;
     border-radius: 40px;
+}
+
+.admin-photo{
+    display: inline-block;
+    padding-left: 14px;
+    margin-right: 0;
+}
+
+.admin-section {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.admin-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 8px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.admin-section a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 10px; 
+    color: #F0A04B;
+    text-decoration: none;   
+}
+
+.role {
     margin: 0;
+    font-weight: 300;
+    font-size: 10px;
+    color: #F0A04B;
 }
 
-.admin img{
-    display: inline-block;
-    padding: 14px;
+.menu {
+    background-color: #FFFFFF;
+
+    text-decoration: none;
+    padding: 2rem;
 }
 
-.admin-name {
+.menu i{
     display: inline-block;
+    margin-right: 1.5rem;
+}
+
+.menu__items a{
+    font-family: 'Inter';
+    font-style: normal;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0.5rem;
+}
+
+.menu a:hover {
+    color: #3E54AC;
+}
+
+.navigation {
+    height: 5.5rem;
+}
+
+/*navigation*/
+.section2{
+    background: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.time-line {
+    margin-right: 2rem;
+}
+
+#time{
+    text-align: end;
+}
+
+.clock {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #3E54AC;
+    font-size: 2rem;
+    margin-right: 28px;
+}
+
+.line {
+    border-left: 4px solid #3E54AC  ;
+    height: 55px;
+    margin-right: 28px;
+}
+
+.logout {
+    display: inline-block;
+    width: 132px;
+    height: 55px;
+    background: #3E54AC;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.logout a{
+    font-family: 'Inter';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+/*Statistics*/
+
+.section3{
+    padding: 3rem 0 3rem 0;
+    margin: 0.5rem;
+    background: #FFFFFF;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.deadline {
+    height: 120px;
+    width: 120px;
+    background: #3E54AC;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.deadline__number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.deadline__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F0A04B; 
+}
+
+.deadline__subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;   
+    color: #434343;
+    
+}
+
+.statistic {
+    width: 100%;
+}
+
+.statistic__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px; 
+    color: #434343;
+    margin-bottom: 2rem;
+}
+
+.statistic__number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    color: #3E54AC;
+    text-shadow: 2px 2px 5px #E7E7E7;
+}
+
+/*Messages*/
+.section4{
+    margin: 0.5rem;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.messages{
+    width: 90%;
+    height: 100%    ;
+}
+
+.message1{
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 120px;
+    width: 100%;
+}
+
+.messages__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px; 
+    color: #434343;
+    padding: 1rem 0 1rem 0;
+}
+
+.message{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;  
+    color: #434343; 
+}
+
+.student{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #434343;    
+}
+
+.message-text {
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.line1{
+    display: inline-block;
+    border-left: 3px solid #3E54AC  ;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.message {
+    display: inline-block;
+}
+
+.messages img{
+    margin-right: 1rem;
+}
+
+.student{
+    display: inline-block;
+}
+
+.message__time{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F0A04B;
+    text-align: end;
+}
+
+/*Payment*/
+.payment{
+    background: #FFFFFF;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.payment__title{
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 1rem 0 1rem 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #434343;
+}
+
+.students{
+    height: 60px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 350px;
+}
+
+.student-name{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #434343;
+    margin-bottom: 0;
+}
+
+.amount {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F0A04B;
+    text-align: end;
+    margin-bottom: 0;  
 }
