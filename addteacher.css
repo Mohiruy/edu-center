@@ -1,0 +1,63 @@
+.addteacher{
+    background: #fff;
+}
+
+.addteacher-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;   
+    color: #30AADD;    
+}
+
+.form-title{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434343;
+}
+
+.form-area{
+    width: 581px;
+    height: 63px;
+    left: 495px;
+    top: 306px;
+    
+    background: #ECF2FF;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.plus{
+    background: #8BDB81;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 63px;
+    height: 63px;
+    border: none;
+}
+
+.text-area{
+    background: #ECF2FF;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.add{
+    width: 170px;
+    height: 59px; 
+    background: #8BDB81;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ECF2FF; 
+    border: none;  
+}
