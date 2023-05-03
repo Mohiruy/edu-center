@@ -18,8 +18,8 @@ body {
 .section1 {
     background: #FFFFFF;
     box-shadow: 4px 0px 5px rgba(184, 184, 184, 0.25);
-    margin-right: 0.5rem;
     height: 100vh;
+    z-index: 2;
 }
 
 .admin{
@@ -33,7 +33,7 @@ body {
 }
 
 .logo img{
-    width: 250px;
+    width: 100%;
     height: 200px;
     margin-top: 10px;
 }
@@ -44,21 +44,9 @@ body {
     border-radius: 40px;
 }
 
-.navbar1 {
-    width: 278px;
-}
-
-.logo1{
-    height: 5.5rem;
-}
-
-.logo1 img{
-    margin-top: 10px;
-}
-
 .admin-photo{
     display: inline-block;
-    padding-left: 14px;
+    padding-left: 10px;
     margin-right: 0;
 }
 
@@ -71,20 +59,9 @@ body {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 8px;
     color: #FFFFFF;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.admin-name1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 8px;
-    color: #434343;
     margin-top: 10px;
     margin-bottom: 0;
 }
@@ -93,7 +70,7 @@ body {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 10px; 
     color: #F0A04B;
     text-decoration: none;   
@@ -104,24 +81,6 @@ body {
     font-weight: 300;
     font-size: 10px;
     color: #F0A04B;
-}
-
-
-.admin-section1 a{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 10px; 
-    color: #797979;
-    text-decoration: none;   
-}
-
-.role1 {
-    margin: 0;
-    font-weight: 300;
-    font-size: 10px;
-    color: #797979;
 }
 
 .menu {
@@ -140,8 +99,15 @@ body {
     font-style: normal;
     display: inline-block;
     text-decoration: none;
-    color: black;
     padding-bottom: 0.5rem;
+}
+
+.color{
+    color: #000;
+}
+
+.color1{
+    color: #3E54AC;
 }
 
 .menu a:hover {
@@ -174,26 +140,6 @@ body {
     margin-right: 28px;
 }
 
-.line {
-    border-left: 4px solid #3E54AC  ;
-    height: 55px;
-    margin-right: 28px;
-}
-
-.logout {
-    display: inline-block;
-    width: 132px;
-    height: 55px;
-    background: #3E54AC;
-    border-radius: 10px;
-    color: #FFFFFF;
-}
-
-.logout a{
-    font-family: 'Inter';
-    font-style: normal;
-    text-decoration: none;
-    text-align: center;
-    color: #FFFFFF;
-    width: 100%;
+.main-part{
+    margin: 0 0.8rem 0 0.8rem;
 }

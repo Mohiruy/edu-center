@@ -1,0 +1,101 @@
+
+
+/*add group*/
+.description{
+    border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  .section3{
+    padding-left: 3rem;
+  }
+  
+  .week-days{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .part{
+    padding: 1rem 0 1rem 2rem;
+  }
+  
+  .week{
+    padding-bottom: 1rem;
+  }
+  
+  .week-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #434343;
+    
+  }
+  
+  .form-section{
+    width: 100%;
+  }
+  
+  .part2{
+    padding: 1rem 0 1rem 0;
+  }
+  
+  .section4{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  .part3{
+    padding: 1rem 0 1rem 1rem;
+  }
+  
+  .part4{
+    padding: 0 0 1rem 1rem;
+  }
+  
+  /*time*/
+  .time-subtitle{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #434343;
+    padding-right: 1rem;  
+  }
+  
+  .time{
+    display: inline-block;
+    padding-right: 1rem;
+  }
+  
+  .time .select-btn{
+    display: inline-flex;
+    width: 150px;
+    height: 58px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;  
+  }
+  
+  .two{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #434343;
+    padding-right: 1rem;  
+  }

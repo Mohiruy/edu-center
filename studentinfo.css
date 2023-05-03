@@ -1,0 +1,128 @@
+.student-info{
+    background: #fff;
+    margin-left: 0.5rem;
+    padding: 2rem;
+}
+
+.student-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;   
+    color: #3E54AC;
+}
+
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434343;
+}
+
+.subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434343;
+}
+
+.section-table{
+    padding-top: 2rem;
+    height: 33vh;
+}
+
+.description{
+    border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#datatable{
+    height: 32vh;
+}
+
+.table td{
+    border-left: 1px solid #3E54AC;
+}
+
+.table th{
+    border-left: 1px solid #fff;
+}
+
+.table-head{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #434343;
+    
+    padding-bottom: 0.5rem;
+}
+
+.border1{
+    border-radius: 10px 0 0 10px;
+}
+
+.border2{
+    border-radius: 0 10px 10px 0;
+}
+
+.table-el{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #434343;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;    
+}
+
+.table-buttons{
+    width: 35.57px;
+    height: 35px;
+    margin: 0 0.4rem 0 0.4rem;
+    background: #7AA874;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+.buttons{
+    height: 100%;
+    border: none;
+}
+
+
+.button1{
+    background: #7AA874;
+}
+
+.button2{
+    background: #F0A04B;
+}
+
+.button3{
+    background: #EA5455;
+}
+
+.plus{
+    background: #3E54AC;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+}

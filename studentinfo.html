@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine</title>
+    <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./studentinfo.css">
+    <link rel="stylesheet" href="./fonts/">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="admin container-fluid">
+        <div class="row">
+            <div class="col-2 section1">
+                <div class="logo d-flex align-items-center justify-content-center">
+                    <div> 
+                        <img src="./images/logo.jpg" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="navbar d-flex justify-content-start">
+                        <div class="admin-photo">
+                            <img src="./images/photo1.png" alt="Photo">
+                        </div>
+                        <div class="admin-section">
+                            <p class="admin-name">Mansur Khamraev</p>
+                            <a href="./dropdown.html">mxamraev898@gmail.com</a>
+                            <p class="role">(Admin)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu__items">
+                        <i class="fa-solid fa-gauge"></i>
+                        <a href="./index.html" class="color">Dashboard</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-users"></i>
+                        <a href="./groups.html" class="color">Groups</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <a href="./teachers.html" class="color">Teacher</a>
+                    </div>                    
+                    <div class="menu__items">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <a href="./students.html" class="color1">Students</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-sharp fa-solid fa-coins"></i>
+                        <a href="#" class="color">Payment</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <a href="#" class="color">Mail</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-gear"></i>    
+                        <a href="#" class="color">Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row section2">
+                    <div class="navigation d-flex justify-content-end align-items-center">
+                        <div class="time-line">
+                            <div id="time"></div>
+                            <div id="day"></div>
+                        </div>
+                        <div class="clock">
+                            <i class="fa-sharp fa-solid fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-part">
+                    <div class="row student-info">
+                        <p class="student-title">Student info</p>
+                        <div class="col">
+                            <p class="title">Firstname:</p>
+                            <p class="title">Lastname:</p>
+                            <p class="title">Age:</p>
+                            <p class="title">Email:</p>
+                            <p class="title">Phone number:</p>
+                            <p class="title">Additinional <br> phone number:</p>
+                        </div>
+                        <div class="col">
+                            <p class="subtitle">Suhrob</p>
+                            <p class="subtitle">Atoev</p>
+                            <p class="subtitle">23</p>
+                            <p class="subtitle">s_atoev888@gmail.com</p>
+                            <p class="subtitle">+998 99 123 45 67</p>
+                            <p class="subtitle">+998 99 123 45 67</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="title">Has any privilage:</p>
+                                </div>
+                                <div class="col">
+                                    <p class="subtitle">No</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="description"><p class="title">Description of privilage:</p></label>
+                                <textarea name="description" id="description" cols="30" rows="7" class="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="row section-table">
+                            <div class="col">
+                                <p class="student-title">Groups</p>
+                                <table class="table table-column">  
+                                    <tbody>
+                                      <tr class="table-el d-flex align it">
+                                        <th class="text-center" scope="row">1</th>
+                                        <td>Math-kids-001</td>
+                                        <td>Mathematic(Atoev Suhrob)</td>
+                                        <td>14:00-15.30 <br>Mon/wed/Fri</td>
+                                        <td class="text-center">
+                                            <a href="#"><button class="table-buttons button2"><i class="fa-solid fa-eye"></i></button></a>
+                                            <a href="#"><button class="table-buttons button3"><i class="fa-solid fa-trash-can"></i></button></a>
+                                        </td>
+                                       </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="col">
+                                <p class="student-title">Payments</p>
+                                <table class="table table-column"> 
+                                    <tbody>
+                                      <tr class="table-el">
+                                        <th class="text-center" scope="row">1</th>
+                                        <td>Math-kids-001</td>
+                                        <td>450.000 so'm    </td>
+                                        <td>14:00<br>22.04.2023</td>
+                                        <td class="text-center">
+                                            <a href="#"><button class="table-buttons button1"><i class="fa-solid fa-pencil"></i></button></a>
+                                            <a href="#"><button class="table-buttons button2"><i class="fa-solid fa-eye"></i></button></a>
+                                            <a href="#"><button class="table-buttons button3"><i class="fa-solid fa-trash-can"></i></button></a>
+                                        </td>
+                                       </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex justify-content-end">
+                                <button class="plus d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="col d-flex d-flex justify-content-end">
+                                <button class="plus d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="./app.js"></script>
+
+</html>

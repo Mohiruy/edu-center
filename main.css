@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url(./fonts/Jost-Regular.ttf);
+}
+
+/*Log out*/
+.line {
+    border-left: 4px solid #3E54AC  ;
+    height: 55px;
+    margin-right: 28px;
+}
+
+.logout {
+    display: inline-block; 
+}
+
+.logout button{
+    font-family: 'Inter';
+    font-style: normal;
+    border-radius: 10px;
+    border: none;
+    width: 140px;
+    height: 55px;
+    background: #3E54AC;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 
 /*Statistics*/
 
@@ -5,7 +38,7 @@
     padding: 3rem 0 3rem 0;
     margin: 0.5rem;
     background: #FFFFFF;
-    height: 100%;
+    height: 35vh;
     border-radius: 10px;
 }
 
@@ -75,18 +108,21 @@
     margin: 0.5rem;
     background: #FFFFFF;
     border-radius: 10px;
+    height: 50vh;
+    padding: 2rem;
+
 }
 
 .messages{
     width: 90%;
-    height: 100%    ;
+    height: 40vh;
 }
 
 .message1{
     margin-bottom: 1rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    height: 120px;
+    height: 40%;
     width: 100%;
 }
 
@@ -97,7 +133,7 @@
     font-size: 24px;
     line-height: 29px; 
     color: #434343;
-    padding: 1rem 0 1rem 0;
+    padding-left: 2.5rem;
 }
 
 .message{
@@ -132,6 +168,7 @@
 
 .message {
     display: inline-block;
+    margin-bottom: 0;
 }
 
 .messages img{
@@ -157,23 +194,26 @@
     background: #FFFFFF;
     margin: 0.5rem;
     border-radius: 10px;
+    padding: 2.5rem;
+    height: 50vh;
 }
 
 .payment__title{
     font-family: 'Inter';
     font-style: normal;
-    padding: 1rem 0 1rem 0;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: #434343;
+    padding-left: 2rem;
 }
 
 .students{
-    height: 60px;
+    height: 50px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: 350px;
+    margin-bottom: 0.5rem;
 }
 
 .student-name{

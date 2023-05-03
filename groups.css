@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url(./fonts/Jost-Regular.ttf);
+}
+
+.focus{
+    color: #3E54AC;
+}
+
+.groups {
+    background: #fff;
+    height: 90%;
+    padding: 1.5rem;
+}
+
+.search{
+    padding: 1rem 0 1rem 0;
+    height: 70px;
+}
+
+#datatable{
+    height: 65vh;
+}
+
+.table td{
+    border-left: 1px solid #3E54AC;
+}
+
+.table th{
+    border-left: 1px solid #fff;
+}
+
+.table-head{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    background: #3E54AC;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-bottom: 0.5rem;
+}
+
+.border1{
+    border-radius: 10px 0 0 10px;
+}
+
+.border2{
+    border-radius: 0 10px 10px 0;
+}
+
+.table-el{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #434343;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;    
+}
+
+.table-buttons{
+    width: 35.57px;
+    height: 35px;
+    margin: 0 0.4rem 0 0.4rem;
+    background: #7AA874;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+.buttons{
+    height: 100%;
+    border: none;
+}
+
+.button1{
+    background: #7AA874;
+}
+
+.button2{
+    background: #F0A04B;
+}
+
+.button3{
+    background: #EA5455;
+}
+ 
+.add-teacher button{
+    border: none;
+    background: #3E54AC;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: #fff;
+    width: 170px;
+    height: 59px;
+}
+
+/*Group-members*/
+.group__name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    color: #3E54AC; 
+}
+
+.text1{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #434343;    
+}
+
+.text2{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #3E54AC;    
+}
+
+#datatable1{
+    height: 58vh;
+}

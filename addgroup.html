@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine</title>
+    <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./addteacher.css">
+    <link rel="stylesheet" href="./addgroup.css">
+    <link rel="stylesheet" href="./fonts/">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="admin container-fluid">
+        <div class="row">
+            <div class="col-2 section1">
+                <div class="logo d-flex align-items-center justify-content-center">
+                    <div> 
+                        <img src="./images/logo.jpg" alt="Logo">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="navbar d-flex justify-content-start">
+                        <div class="admin-photo">
+                            <img src="./images/photo1.png" alt="Photo">
+                        </div>
+                        <div class="admin-section">
+                            <p class="admin-name">Mansur Khamraev</p>
+                            <a href="#">mxamraev898@gmail.com</a>
+                            <p class="role">(Admin)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu__items">
+                        <i class="fa-solid fa-gauge"></i>
+                        <a href="./index.html" class="color">Dashboard</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-users"></i>
+                        <a href="./groups.html" class="color1">Groups</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <a href="./teachers.html" class="color">Teacher</a>
+                    </div>                    
+                    <div class="menu__items">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <a href="./students.html" class="color">Students</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-sharp fa-solid fa-coins"></i>
+                        <a href="#" class="color">Payment</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <a href="#" class="color">Mail</a>
+                    </div>
+                    <div class="menu__items">
+                        <i class="fa-solid fa-gear"></i>    
+                        <a href="#" class="color">Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row section2">
+                    <div class="navigation d-flex justify-content-end align-items-center">
+                        <div class="time-line">
+                            <div id="time"></div>
+                            <div id="day"></div>
+                        </div>
+                        <div class="clock">
+                            <i class="fa-sharp fa-solid fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-part">
+                    <div class="row addteacher">
+                        <div class="col">
+                            <p class="addteacher-title">Add new group</p>
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <label for="name"><p class="form-title forms">Name</p></label><br>
+                                    <input type="text" id="name" name="name" class="form-area">
+                                </div>
+                                <div class="row gx-5">
+                                    <div class="col forms">
+                                        <label for="specialities"><p class="form-title">Subjects</p></label><br>
+                                        <div class="select-menu" id="select-menu1">
+                                            <div class="select-btn" id="select-btn1">
+                                            <span class="sBtn-text" id="sBtn-text1"></span>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                        
+                                            <ul class="options">
+                                            <li class="option" id="option1">
+                                                <span class="option-text" id="option-text1">Math</span>
+                                            </li>
+                                            <li class="option" id="option1">
+                                                <span class="option-text" id="option-text1">English</span>
+                                            </li>
+                                            <li class="option" id="option1">
+                                                <span class="option-text" id="option-text1">Russian</span>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end">
+                                        <button class="plus d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <label for="teacher"><p class="form-title">Teacher</p></label><br>
+                                    <div class="select-menu" id="select-menu2">
+                                        <div class="select-btn" id="select-btn2">
+                                            <span class="sBtn-text" id="sBtn-text2"></span>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                        
+                                        <ul class="options" id="options2">
+                                            <li class="option" id="option2">
+                                            <span class="option-text" id="option-text2">Atoev Suxrob</span>
+                                            </li>
+                                            <li class="option" id="option2">
+                                                <span class="option-text" id="option-text2">Atoev Suxrob</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label for="description"><p class="form-title">Description</p></label>
+                                    <textarea name="description" id="description" cols="30" rows="6" class="description"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <div class="section3">
+                                <p class="form-title">Days</p>
+                                <div class="week-days">
+                                    <div class="row gx-5">
+                                        <div class="col">
+                                            <div class="part">
+                                                <div class="form-check week">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                                    <label class="form-check-label week-title" for="flexCheckDefault1">
+                                                        Monday
+                                                    </label>
+                                                </div>
+                                                <div class="form-check week">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                                    <label class="form-check-label week-title" for="flexCheckDefault2">
+                                                        Tuesday
+                                                    </label>
+                                                </div>
+                                                <div class="form-check week">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                                    <label class="form-check-label week-title" for="flexCheckDefault3">
+                                                        Wednesday
+                                                    </label>
+                                                </div>
+                                                <div class="form-check week">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                                                    <label class="form-check-label week-title" for="flexCheckDefault4">
+                                                        Thursday
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <div class="part">
+                                                <div class="form-check week">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                                                    <label class="form-check-label week-title" for="flexCheckDefault5">
+                                                        Friday
+                                                    </label>
+                                                </div>
+                                                <div class="form-check week">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                                                    <label class="form-check-label week-title" for="flexCheckDefault6">
+                                                        Saturday
+                                                    </label>
+                                                </div>
+                                                <div class="form-check week">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                                                    <label class="form-check-label week-title" for="flexCheckDefault7">
+                                                        Sunday
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="row">
+                                    <form action="/action_page.php" class="form-section">
+                                        <div class="part2">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label for="duration"><p class="form-title forms">Duration</p></label>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" id="duration" name="duration" class="form-area">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="form-title">Time</p>
+                                        <div class="section4">
+                                            <div class="part3 row">
+                                                <div class="col-2">
+                                                    <p class="time-subtitle">Start</p>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="select-menu time" id="select-menu3">
+                                                        <div class="select-btn" id="select-btn3">
+                                                            <span class="sBtn-text" id="sBtn-text3"></span>
+                                                            <i class="fa-solid fa-chevron-down"></i>
+                                                        </div>
+                                                        <ul class="options" id="options3">
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">0</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">1</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">2</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">3</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">4</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">5</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">6</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">7</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">8</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">9</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">10</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">11</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">12</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">13</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">14</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">15</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">16</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">17</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">18</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">19</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">20</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">21</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">22</span>
+                                                            </li>
+                                                            <li class="option" id="option3">
+                                                                <span class="option-text" id="option-text3">23</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="two">:</p>
+                                                    <div class="select-menu time" id="select-menu4">
+                                                        <div class="select-btn" id="select-btn4">
+                                                            <span class="sBtn-text" id="sBtn-text4"></span>
+                                                            <i class="fa-solid fa-chevron-down"></i>
+                                                        </div>
+                                                        <ul class="options" id="options4">
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">0</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">1</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">2</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">3</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">4</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">5</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">6</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">7</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">8</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">9</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">10</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">11</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">12</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">13</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">14</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">15</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">16</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">17</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">18</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">19</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">20</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">21</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">22</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">23</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">24</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">25</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">26</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">27</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">28</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">29</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">30</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">31</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">32</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">33</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">34</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">35</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">36</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">37</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">38</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">39</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">40</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">41</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">42</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">43</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">44</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">45</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">46</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">47</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">48</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">49</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">50</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">51</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">52</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">53</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">54</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">55</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">56</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">57</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">58</span>
+                                                            </li>
+                                                            <li class="option" id="option4">
+                                                                <span class="option-text" id="option-text4">59</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="part4 row">
+                                                <div class="col-2">
+                                                    <p class="time-subtitle">Finish</p>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="select-menu time" id="select-menu5">
+                                                        <div class="select-btn" id="select-btn5">
+                                                            <span class="sBtn-text" id="sBtn-text5"></span>
+                                                            <i class="fa-solid fa-chevron-down"></i>
+                                                        </div>
+                                                        <ul class="options" id="options5">
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">0</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">1</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">2</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">3</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">4</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">5</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">6</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">7</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">8</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">9</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">10</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">11</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">12</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">13</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">14</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">15</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">16</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">17</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">18</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">19</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">20</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">21</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">22</span>
+                                                            </li>
+                                                            <li class="option" id="option5">
+                                                                <span class="option-text" id="option-text5">23</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p class="two">:</p>
+                                                    <div class="select-menu time" id="select-menu6">
+                                                        <div class="select-btn" id="select-btn6">
+                                                            <span class="sBtn-text" id="sBtn-text6"></span>
+                                                            <i class="fa-solid fa-chevron-down"></i>
+                                                        </div>
+                                                        <ul class="options" id="options6">
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">0</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">1</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">2</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">3</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">4</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">5</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">6</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">7</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">8</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">9</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">10</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">11</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">12</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">13</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">14</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">15</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">16</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">17</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">18</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">19</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">20</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">21</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">22</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">23</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">24</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">25</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">26</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">27</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">28</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">29</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">30</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">31</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">32</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">33</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">34</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">35</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">36</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">37</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">38</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">39</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">40</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">41</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">42</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">43</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">44</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">45</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">46</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">47</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">48</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">49</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">50</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">51</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">52</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">53</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">54</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">55</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">56</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">57</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">58</span>
+                                                            </li>
+                                                            <li class="option" id="option6">
+                                                                <span class="option-text" id="option-text6">59</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row add-teacher d-flex justify-content-end forms">
+                            <button>Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script src="./app.js"></script>
+
+</html>
